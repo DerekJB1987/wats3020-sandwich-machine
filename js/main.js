@@ -10,24 +10,24 @@
 // TODO: Prompt the user for what kind of bread they would like.
 // Ideally, that would look something like: "What kind of bread (white, wheat, flat)?"
 
-
+let breadOrder = prompt('What kind of bread would you like? (White, wheat, or flat)', 'wheat');
 
 // TODO: Prompt the user for what kind of meat(s) they would like.
 // Indicate they should separate multiple items with a comma:
 // "What kind of meat? (Separate meats with a comma if you would like more than one.)"
 
-
+let meatOrder = prompt('What kind of meat would you like? (Sepeate meat(s) with a comma if more than one meat)')
 
 // TODO: Prompt the user for what kind of toppings they would like.
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
 
-
+let toppingsOrder = prompt('What kind of toppings would you like? (Seperate toppings with a comma if more than one')
 
 // TODO: Prompt the user for what kind of condiments they would like.
 // Again, we should expect a comma-separated list if items here.
 
-
+let condimentsOrder = prompt('What kind of condiments would you like? (Seperate condiments with a comma if more than one')
 
 // Step Two ////////////////////////////////////////////////////////////
 //
