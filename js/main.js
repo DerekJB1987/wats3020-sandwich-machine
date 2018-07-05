@@ -16,18 +16,18 @@ let breadOrder = prompt('What kind of bread would you like? (White, wheat, or fl
 // Indicate they should separate multiple items with a comma:
 // "What kind of meat? (Separate meats with a comma if you would like more than one.)"
 
-let meatOrder = prompt('What kind of meat would you like? (Sepeate meat(s) with a comma if more than one meat)')
+let meatOrder = prompt('What kind of meat would you like? (Sepeate meat(s) with a comma if more than one meat)');
 
 // TODO: Prompt the user for what kind of toppings they would like.
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
 
-let toppingsOrder = prompt('What kind of toppings would you like? (Seperate toppings with a comma if more than one')
+let toppingsOrder = prompt('What kind of toppings would you like? (Seperate toppings with a comma if more than one');
 
 // TODO: Prompt the user for what kind of condiments they would like.
 // Again, we should expect a comma-separated list if items here.
 
-let condimentsOrder = prompt('What kind of condiments would you like? (Seperate condiments with a comma if more than one')
+let condimentsOrder = prompt('What kind of condiments would you like? (Seperate condiments with a comma if more than one');
 
 // Step Two ////////////////////////////////////////////////////////////
 //
@@ -45,9 +45,9 @@ let prices = {
 
 // TODO: Convert order information from Strings to Arrays.
 
-let meatArray = null;
-let toppingArray = null;
-let condimentArray = null;
+let meatArray = meatOrder.split(','); 
+let toppingArray = toppingsOrder.split(',');
+let condimentArray = condimentsOrder.split(',');
 
 // TODO: Calculate cost for meat, toppings, and condiments.
 // This requires you to determine the length of each Array you just made
