@@ -54,9 +54,9 @@ let condimentArray = condimentOrder.split(',');
 // and multiply out the costs. You will need to refer to the attributes of the
 // `prices` object in order to calculate these costs.
 
-let meatCost = meatOrder.split * prices.meat;
-let toppingCost = toppingOrder.split * prices.topping;
-let condimentCost = condimentOrder.split * prices.condiment;
+let meatCost = meatArray.length * prices.meat;
+let toppingCost = toppingArray.length * prices.topping;
+let condimentCost = condimentArray.length * prices.condiment;
 
 // TODO: Combine the costs of each part of the sandwich to get the subtotal.
 let subtotal = prices.sandwich + meatCost + toppingCost + condimentCost;
