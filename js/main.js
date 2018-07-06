@@ -22,12 +22,12 @@ let meatOrder = prompt('What kind of meat would you like? (Sepeate meat(s) with 
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
 
-let toppingsOrder = prompt('What kind of toppings would you like? (Seperate toppings with a comma if more than one');
+let toppingOrder = prompt('What kind of toppings would you like? (Seperate toppings with a comma if more than one');
 
 // TODO: Prompt the user for what kind of condiments they would like.
 // Again, we should expect a comma-separated list if items here.
 
-let condimentsOrder = prompt('What kind of condiments would you like? (Seperate condiments with a comma if more than one');
+let condimentOrder = prompt('What kind of condiments would you like? (Seperate condiments with a comma if more than one');
 
 // Step Two ////////////////////////////////////////////////////////////
 //
@@ -46,27 +46,27 @@ let prices = {
 // TODO: Convert order information from Strings to Arrays.
 
 let meatArray = meatOrder.split(','); 
-let toppingArray = toppingsOrder.split(',');
-let condimentArray = condimentsOrder.split(',');
+let toppingArray = toppingOrder.split(',');
+let condimentArray = condimentOrder.split(',');
 
 // TODO: Calculate cost for meat, toppings, and condiments.
 // This requires you to determine the length of each Array you just made
 // and multiply out the costs. You will need to refer to the attributes of the
 // `prices` object in order to calculate these costs.
 
-let meatCost = null;
-let toppingCost = null;
-let condimentCost = null;
+let meatCost = meatArray.split * prices.meat;
+let toppingCost = toppingArray.split * prices.topping;
+let condimentCost = condimentArray.split * prices.condiment;
 
 // TODO: Combine the costs of each part of the sandwich to get the subtotal.
-let subtotal = null;
+let subtotal = prices.sandwich + meatCost + toppingCost + condimentCost;
 
 // TODO: Calculate the tax owed using the waStateTaxRate.
 let waStateTaxRate = 0.065;
-let orderTax = null;
+let orderTax = subtotal * waStateTaxRate;
 
 // TODO: Calculate `totalPrice` by adding `subtotal` and `orderTax`.
-let totalPrice = null;
+let totalPrice = subtotal + orderTax;
 
 
 // Step Three //////////////////////////////////////////////////////////
